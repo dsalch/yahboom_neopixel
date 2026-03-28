@@ -1,5 +1,5 @@
 {
-    "name": "neopixel",
+    "name": "yahboom_neopixel",
     "version": "1.0.0",
     "description": "AdaFruit NeoPixel driver",
     "license": "MIT",
