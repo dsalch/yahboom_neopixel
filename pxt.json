@@ -9,7 +9,8 @@
     "files": [
         "README.md",
         "neopixel.ts",
-        "sendBuffer.asm"
+        "sendBuffer.asm",
+        "icon.png"
 
     ],
     "testFiles": [
