@@ -41,9 +41,6 @@ enum NeoPixelMode {
  */
 //% weight=5 color=#2699BF icon="\uf110"
 namespace neopixel {
-    //% shim=sendBufferAsm
-    function sendBuffer(buf: Buffer, pin: DigitalPin) {
-    }
 
     /**
      * A NeoPixel strip
@@ -86,7 +83,6 @@ namespace neopixel {
             const luminance = 50;
             const steps = this._length;
 
-            // Simple Hue Interpolation
             const h1 = startHue;
             const h2 = endHue;
             const hDistCW = ((h2 + 360) - h1) % 360;
@@ -141,7 +137,8 @@ namespace neopixel {
         //% weight=79
         //% parts="neopixel"
         show() {
-            sendBuffer(this.buf, this.pin);
+            // Universal driver for V1 and V2
+            light.sendWS2812Buffer(this.buf, this.pin);
         }
 
         /**
