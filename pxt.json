@@ -1,6 +1,6 @@
 {
     "name": "yahboom_neopixel",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "NeoPixel driver for Yahboom Smartcar modified by David Salch",
     "license": "MIT",
     "dependencies": {
@@ -9,7 +9,6 @@
     "files": [
         "README.md",
         "neopixel.ts",
-        "sendBuffer.asm",
         "icon.png"
 
     ],
