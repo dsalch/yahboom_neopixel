@@ -491,7 +491,7 @@ namespace neopixel {
         }
     }
 
-    /**
+/**
      * Create a new NeoPixel driver for `numleds` LEDs.
      * @param pin the pin where the neopixel is connected.
      * @param numleds number of leds in the strip, eg: 24,30,60,64
@@ -501,7 +501,8 @@ namespace neopixel {
     //% parts="neopixel"
     //% trackArgs=0,2
     //% blockSetVariable=strip
-    export function create(pin: DigitalPin, numleds: number, mode: NeoPixelMode): Strip {
+    //% pin.defl=DigitalPin.P16
+    export function create(pin: DigitalPin = DigitalPin.P16, numleds: number, mode: NeoPixelMode): Strip {
         let strip = new Strip();
         let stride = mode === NeoPixelMode.RGBW ? 4 : 3;
         strip.buf = pins.createBuffer(numleds * stride);
