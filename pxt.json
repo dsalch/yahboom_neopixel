@@ -1,7 +1,7 @@
 {
     "name": "yahboom_neopixel",
-    "version": "1.0.1",
-    "description": "AdaFruit NeoPixel driver",
+    "version": "2.0.0",
+    "description": "NeoPixel driver for Yahboom Smartcar modified by David Salch",
     "license": "MIT",
     "dependencies": {
         "core": "*"
@@ -9,12 +9,8 @@
     "files": [
         "README.md",
         "neopixel.ts",
-        "sendBuffer.asm",
-        "_locales/ja/neopixel-strings.json",
-        "_locales/zh-cn/neopixel-strings.json",
-        "_locales/zh-tw/neopixel-strings.json",
-        "_locales/de/neopixel-strings.json",
-        "_locales/de/neopixel-jsdoc-strings.json"
+        "sendBuffer.asm"
+
     ],
     "testFiles": [
         "neotest.ts"
